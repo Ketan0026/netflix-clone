@@ -1,0 +1,34 @@
+.errorpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.errorpage img {
+  width: 250px;
+}
+.errorpage button{
+    min-height: 40px;
+}
+
+@media screen and (min-width: 300px){
+    .errorpage img{
+        width: 300px;
+    }
+}
+@media screen and (min-width: 350px){
+    .errorpage img{
+        width: 350px;
+    }
+}
+@media screen and (min-width: 400px){
+    .errorpage img{
+        width: 400px;
+    }
+}
+@media screen and (min-width: 500px){
+    .errorpage img{
+        width: 500px;
+    }
+}

@@ -1,0 +1,196 @@
+.detailsBanner {
+  width: 100%;
+  background-color: #000;
+  height: 450px;
+  padding-top: 100px;
+}
+.detailsBanner .backdrop-img {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.backdrop-img .img-backDrop {
+  opacity: 0.7 !important;
+}
+.backdrop-img .lazy-load-image-background {
+  width: 100%;
+  height: 100%;
+}
+.backdrop-img .lazy-load-image-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.detailsBanner .opacity-layer {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(180deg, rgba(4, 21, 45, 0) 0%, #0b0c0c 79.17%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.detailsBanner .details-content {
+  position: absolute;
+  margin-left: 20px;
+  padding-top: 125px;
+}
+.details-content .title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.details-content .movie-info {
+  margin-top: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.details-content .movie-info img {
+  margin: 0 5px;
+}
+.details-content .movie-description {
+  width: 20rem;
+  line-height: 1.6;
+  padding-top: 1rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  max-width: 500px;
+  height: 80px;
+  display: none;
+}
+.details-content .banner__buttons {
+  display: flex;
+}
+.details-content .banner__buttons .banner__button {
+  padding: 0.5rem 1.3rem;
+}
+.details-content .banner__buttons .details-playBtn {
+  display: flex;
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+  align-items: center;
+}
+.banner__buttons .details-playBtn img {
+  margin-right: 7px;
+  width: 13px;
+}
+.banner__buttons .details-playBtn:hover {
+  opacity: 0.8;
+}
+.detailsBanner .detailsBannerSkeleton {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 25px;
+}
+.detailsBanner .detailsBannerSkeleton .contentWrapper {
+  display: flex;
+  gap: 50px;
+}
+.detailsBanner .detailsBannerSkeleton .left {
+  flex-shrink: 0;
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  aspect-ratio: 1/1.5;
+}
+
+@media screen and (min-width: 320px) {
+  .details-content .banner__buttons .banner__button {
+    padding: 0.5rem 2rem;
+  }
+}
+@media screen and (min-width: 372px) {
+  .details-content .movie-description {
+    display: block;
+  }
+  .detailsBanner, .detailsBanner .backdrop-img {
+    height: 510px;
+  }
+  .detailsBanner .details-content {
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 450px) {
+  .details-content .movie-description {
+    width: 25rem;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 531px) {
+  .details-content .movie-description {
+    width: 30rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .detailsBanner, .detailsBanner .backdrop-img {
+    height: 550px;
+  }
+  .details-content .title {
+    font-size: 45px;
+  }
+  .details-content .banner__buttons .banner__button {
+    font-size: 0.9rem;
+  }
+  .details-content .movie-description {
+    width: 45rem;
+    font-size: 0.9rem;
+  }
+  .detailsBanner .details-content {
+    bottom: 25%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .detailsBanner, .detailsBanner .backdrop-img {
+    height: 580px;
+  }
+  .details-content .title {
+    font-size: 50px;
+  }
+  .details-content .banner__buttons .banner__button {
+    font-size: 0.95rem;
+    height: 35px;
+  }
+  .details-content .movie-description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .detailsBanner .details-content {
+    bottom: 20%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .detailsBanner, .detailsBanner .backdrop-img {
+    height: 650px;
+  }
+  .details-content .title {
+    font-size: 55px;
+  }
+  .details-content .banner__buttons .banner__button {
+    font-size: 1rem;
+  }
+  .detailsBanner .details-content {
+    bottom: 25%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .detailsBanner, .detailsBanner .backdrop-img {
+    height: 730px;
+  }
+  .details-content .title {
+    font-size: 60px;
+  }
+  .details-content .banner__buttons .banner__button {
+    font-size: 1.1rem;
+  }
+}

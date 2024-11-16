@@ -1,0 +1,56 @@
+.searchResultsPage {
+  padding: 70px 0 1px;
+  background: #232323;
+}
+.searchResultsPage .resultNotFound {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  height: 50vh;
+  display: block;
+  color: #fff;
+}
+.searchResultsPage .pageTitle {
+  font-size: 24px;
+  line-height: 34px;
+  color: white;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+.searchResultsPage .contents {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.searchResultsPage .contentWrapper {
+  margin: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .searchResultsPage .pageTitle{
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 350px) {
+  .searchResultsPage .pageTitle{
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .searchResultsPage .pageTitle{
+    margin-left: 35px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .searchResultsPage {
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .searchResultsPage .pageTitle{
+    margin-left: 55px;
+  }
+}

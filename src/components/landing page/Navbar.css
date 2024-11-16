@@ -1,0 +1,120 @@
+.nav-container {
+  width: 100%;
+  position: absolute;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  align-items: center;
+  background: transparent;
+  z-index: 2;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.7889) 8.333%,
+    rgba(0, 0, 0, 0.7556) 16.67%,
+    rgba(0, 0, 0, 0.7) 25%,
+    rgba(0, 0, 0, 0.6222) 33.33%,
+    rgba(0, 0, 0, 0.5222) 41.67%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.2778) 58.33%,
+    rgba(0, 0, 0, 0.1778) 66.67%,
+    rgba(0, 0, 0, 0.1) 75%,
+    rgba(0, 0, 0, 0.04444) 83.33%,
+    rgba(0, 0, 0, 0.01111) 91.67%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.logo-section img {
+  width: 9.25rem;
+  height: 2.5rem;
+  color: rgb(229, 9, 20);
+  fill: currentColor;
+  display: block;
+}
+.logo-section {
+  width: auto;
+  flex: 0 0 auto;
+}
+.btn-section {
+  display: flex;
+}
+button {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1;
+  transition: background-color ease-in-out 250ms;
+  vertical-align: text-top;
+  width: auto;
+  font-size: 0.875rem;
+  outline: none;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  height: 2.1rem;
+  padding: 0.25rem 1rem;
+  background-color: rgb(229, 9, 20);
+  color: rgb(255, 255, 255);
+}
+button:hover {
+  background-color: rgb(154, 0, 8);
+}
+.lang-btn {
+  cursor: default;
+  background: #161616b3;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 1rem;
+  font-size: 15px;
+  font-weight: 600;
+  height: 2.1rem;
+  border-radius: 0.25rem;
+  margin-right: 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.7);
+}
+
+.lang-btn img {
+  width: 1.2rem;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 380px) {
+  .lang-btn{
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav-container {
+    padding: 0 2rem;
+  }
+  .logo-section {
+    width: auto;
+    flex: 0 0 calc(50% - 16px);
+  }
+}
+@media screen and (min-width: 960px) {
+  .logo-section {
+    width: auto;
+    flex: 0 0 calc(33.333333333333336% - 16px);
+  }
+}
+@media screen and (max-width: 959.98px) {
+  .logo-section img {
+    width: 5.5625rem;
+    height: 1.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .logo-section {
+    width: auto;
+    flex: 0 0 calc(33.333333333333336% - 16px);
+  }
+  .nav-container {
+    height: 5.5rem;
+    padding: 0 3rem;
+  }
+}

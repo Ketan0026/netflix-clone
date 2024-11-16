@@ -1,0 +1,341 @@
+#appMountPoint {
+  height: 100%;
+}
+#appMountPoint > div {
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+}
+#appMountPoint > div .login-wrapper-background {
+  display: none;
+}
+.login-header {
+  height: 90px;
+  background-color: #fafafa;
+  background-color: black;
+  z-index: 2;
+}
+
+.login-header > .svg-logo {
+  fill: #e50914;
+  display: inline-block;
+  line-height: 90px;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-left: 3%;
+}
+
+.login-header > .svg-logo > .svg-icon-netflix-logo {
+  height: 45px;
+  vertical-align: middle;
+  width: 167px;
+}
+
+.login-body {
+  color: #333;
+  margin: 0 auto;
+}
+
+.login-content {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 515px;
+  padding: 20px 25px 30px;
+  width: 100%;
+}
+
+.login-form-main > h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  margin-bottom: 28px;
+  padding: 0;
+}
+.login-form-main div {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-main div input {
+  margin-bottom: 0;
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 16px;
+  padding-left: 20px;
+}
+.login-form-main div input::placeholder {
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.login-form-main input.error{
+  border: 1px solid rgb(235, 57, 66);
+}
+
+.login-form-main div input.password {
+  margin-top: 16px;
+}
+
+.login-form-main .error-msg {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.53846;
+  color: rgb(235, 57, 66);
+  display: none;
+}
+
+.error-msg.show{
+  display: block;
+}
+.error-msg img {
+  height: 16px;
+  margin-right: 0.25rem;
+  position: relative;
+  top: 0.1875rem;
+}
+
+.login-content .login-form-btn {
+  margin-top: 15px;
+  width: 100%;
+  height: 100%;
+  padding: 16px 0;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.login-form-other > .login-signup-now {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.login-form-other > .login-signup-now a {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 500;
+}
+.login-form-other > .terms-of-use {
+  color: #8c8c8c;
+  font-size: 13px;
+  margin-top: 11px;
+}
+
+.login-footer {
+  color: #757575;
+  font-size: 1em;
+  min-width: 190px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  margin-top: 0;
+  border-top: 1px solid #757575;
+}
+
+.site-footer {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 30px 0;
+  width: 90%;
+}
+.site-footer .footer-top {
+  color: #737373;
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+.footer-top a,
+.footer-link-item a {
+  color: #737373;
+  text-decoration: none;
+}
+
+.site-footer .footer-links {
+  box-sizing: border-box;
+  font-size: 13px;
+  max-width: 1000px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer-links .footer-link-item {
+  list-style: none;
+  margin-left: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 16px;
+  min-width: 100px;
+  padding: 0 22px 0 0;
+  vertical-align: top;
+  width: 25%;
+}
+
+.footer-link-item a:hover {
+  text-decoration: underline;
+}
+
+.site-footer .lang-btn {
+  height: auto;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 0;
+  background-color: #000;
+}
+
+.site-footer .lang-btn img {
+  margin-right: 16px;
+}
+
+.login-form-main .login-icon-images {
+  background-color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.login-form-main .login-icon-images:hover {
+  background-color: gainsboro;
+  transform: scale(1.02);
+}
+
+.login-form-main .login-icon-images img {
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+}
+@media only screen and (max-width: 740px) {
+  .footer-links .footer-link-item {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .login-header {
+    height: 75px;
+  }
+  .login-header .svg-logo {
+    line-height: 75px;
+  }
+  .login-form-main > h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-links .footer-link-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 440px),
+  screen and (orientation: landscape) and (max-width: 700px) {
+  .login-header {
+    height: 45px;
+  }
+  .login-header > .svg-logo {
+    line-height: 45px;
+  }
+  .login-header > .svg-logo > .svg-icon-netflix-logo {
+    height: 20px;
+    margin-top: 11px;
+    width: 75px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .login-content {
+    min-width: 450px;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  #appMountPoint {
+    background-color: transparent;
+    color: #fff;
+  }
+  #appMountPoint > div {
+    background-color: #000;
+    color: #fff;
+  }
+  #appMountPoint > div .login-wrapper-background {
+    background-size: cover;
+    display: block;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  #appMountPoint > div .login-wrapper-background img {
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .login-header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0, transparent);
+    border-bottom: transparent;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .login-body {
+    background-color: transparent;
+    margin: 0 auto -236px;
+    max-width: 450px;
+    min-height: 100vh;
+  }
+  .login-body::before {
+    content: "";
+    display: block;
+    height: 91px;
+  }
+  .login-body::after {
+    content: "";
+    display: block;
+    height: 236px;
+  }
+  .login-content {
+    margin-bottom: 90px;
+    min-height: 660px;
+    padding: 60px 68px 40px;
+  }
+  .login-form-main div input {
+    font-size: 16px;
+  }
+  .site-footer .footer-top,
+  .footer-top a,
+  .footer-link-item a {
+    color: #757575;
+  }
+  .login-footer {
+    border-top: none;
+  }
+}

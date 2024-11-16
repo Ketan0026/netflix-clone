@@ -1,0 +1,48 @@
+.faq-wrapper {
+  padding: 0 1.5rem;
+}
+.faq-section {
+  margin-top: 3.5rem;
+}
+.faq-section > h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.qa-container {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 600px) {
+  .faq-wrapper {
+    padding: 0 2rem;
+  }
+
+  .faq-section > h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .faq-wrapper {
+    padding: 0 5rem;
+  }
+  .faq-section {
+    padding: 0 20% 0 0;
+    margin-top: 4rem;
+  }
+  .faq-section > h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .faq-wrapper {
+    padding: 0 9.25rem;
+  }
+  .faq-section > h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}

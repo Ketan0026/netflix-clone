@@ -1,0 +1,17 @@
+.similar,
+.recommend {
+  display: none;
+}
+.similar.show,
+.recommend.show {
+  display: block;
+}
+.similar.show .carousel {
+  border-top: 0.8rem solid rgb(35, 35, 35);
+  padding-top: 25px;
+}
+.recommend.show .carousel {
+  margin-bottom: 25px;
+  padding-top: 25px;
+  border-top: 0.8rem solid rgb(35, 35, 35);
+}

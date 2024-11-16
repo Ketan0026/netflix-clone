@@ -1,0 +1,138 @@
+.explorePage {
+  min-height: 700px;
+  padding-top: 70px;
+  font-weight: 500;
+  background: #232323;
+}
+.explorePage .contentWrapper {
+  margin: 0;
+}
+.explorePage .resultNotFound {
+  font-size: 24px;
+  color: #173d77;
+}
+.explorePage .pageHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  flex-direction: column;
+}
+.explorePage .pageTitle {
+  font-size: 24px;
+  line-height: 34px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.explorePage .filters {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  flex-direction: column;
+}
+.react-select-container.genresDD,
+.react-select-container.sortbyDD {
+  width: auto;
+}
+.explorePage .filters .react-select-container .react-select__control {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  background-color: #173d77;
+  border-radius: 20px;
+}
+.explorePage
+  .filters
+  .react-select-container
+  .react-select__control
+  .react-select__value-container
+  .react-select__placeholder,
+.explorePage
+  .filters
+  .react-select-container
+  .react-select__control
+  .react-select__value-container
+  .react-select__input-container {
+  color: white;
+  margin: 0 10px;
+}
+.explorePage
+  .filters
+  .react-select-container
+  .react-select__control
+  .react-select__single-value {
+  color: white;
+}
+.explorePage
+  .filters
+  .react-select-container
+  .react-select__control
+  .react-select__multi-value {
+  background-color: #020c1b;
+  border-radius: 10px;
+}
+.explorePage
+  .filters
+  .react-select-container
+  .react-select__control
+  .react-select__multi-value
+  .react-select__multi-value__label {
+  color: white;
+}
+.explorePage
+  .filters
+  .react-select-container
+  .react-select__control
+  .react-select__multi-value
+  .react-select__multi-value__remove {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+.explorePage
+  .filters
+  .react-select-container
+  .react-select__control
+  .react-select__multi-value
+  .react-select__multi-value__remove:hover {
+  color: #1c4b91;
+}
+.explorePage .filters .react-select-container .react-select__menu {
+  top: 40px;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-weight: 500;
+}
+
+.explorePage .content {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  margin-bottom: 50px;
+  justify-content: center;
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .explorePage .pageHeader,
+  .explorePage .filters {
+    flex-direction: row;
+  }
+  .explorePage .pageHeader{
+    width: 92%;
+    margin: 0 auto 25px;
+  }
+  .react-select-container.genresDD,
+  .react-select-container.sortbyDD {
+    width: fit-content;
+  }
+  .react-select-container.genresDD {
+    max-width: 46vw;
+  }
+}
+@media screen and (min-width: 950px) {
+  .explorePage {
+    padding-top: 100px;
+  }
+}

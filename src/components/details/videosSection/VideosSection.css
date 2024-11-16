@@ -1,0 +1,108 @@
+.videosSection {
+  overflow: hidden;
+  padding-bottom: 40px;
+  border-top: 0.8rem solid rgb(35, 35, 35);
+}
+.videosSection .sectionHeading {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  margin: 25px 0;
+}
+.videosSection .contentWrapper {
+  margin: 0 10px;
+}
+.videosSection .videos::-webkit-scrollbar {
+  display: none;
+}
+.videosSection .videos {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 0 20px;
+}
+.videosSection .videos .videoItem {
+  min-width: 201px;
+  min-height: 113px;
+  cursor: pointer;
+}
+.videos .videoItem .videoThumbnail {
+  margin-bottom: 15px;
+  position: relative;
+}
+.videoItem .videoThumbnail img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  transition: all 0.7s ease-in-out;
+}
+.videoThumbnail .play-trailer {
+  background-image: none;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 0.2s ease-in;
+  height: 113px;
+}
+
+.videoThumbnail .play-trailer .trailer-play-btn {
+  background-color: rgba(30, 30, 20, 0.5);
+  border: 1px solid #fff;
+  border-radius: 2em;
+  height: 2em;
+  padding: 0.5em;
+  width: 2em;
+}
+.videoItem .videoThumbnail:hover .play-trailer {
+  opacity: 1;
+}
+.videosSection .videoSkeleton {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 0 20px;
+}
+.videosSection .videoSkeleton .skItem {
+  width: 150px;
+  flex-shrink: 0;
+}
+.videosSection .videoSkeleton .skItem .thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.videosSection .videoSkeleton .skItem .row {
+  height: 20px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.videosSection .videoSkeleton .skItem .row2 {
+  height: 20px;
+  width: 75%;
+  border-radius: 10px;
+}
+.videosSection .lazy-load-image-background {
+  height: auto;
+}
+@media screen and (min-width: 372px) {
+  .videosSection .contentWrapper {
+    margin: 0 20px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .videosSection .sectionHeading {
+    font-size: 1.5vw;
+  }
+}

@@ -1,0 +1,213 @@
+.plan-form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: stretch;
+}
+.subs-plan-card {
+  flex-basis: 100%;
+  position: relative;
+  height: 100%;
+}
+.subs-plan-card label {
+  display: flex;
+  height: 100%;
+}
+.subs-plan-card .cards {
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 107px;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  transition: box-shadow 100ms ease-in-out 0s;
+  background: white;
+}
+
+.cards h2 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: black;
+  margin: 0px;
+}
+
+.cards sub {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(103, 103, 103);
+  bottom: 0px;
+}
+.cards.active h2,
+.cards.active sub {
+  color: white;
+}
+.cards .selectIcon {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  cursor: initial;
+  border-style: none;
+  border-width: 1px;
+  border-color: rgba(128, 128, 128, 0.4);
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  min-height: 16px;
+  align-self: end;
+  margin-top: auto;
+  max-width: 0px;
+  opacity: 0;
+  animation: 100ms ease-out 0s 1 normal forwards running grow;
+}
+.selectIcon svg {
+  transform: scale(1.375);
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* PlanFeatures CSS */
+
+.current-plan-features {
+  margin: 0 -25px;
+}
+
+.current-plan-features ul {
+  box-sizing: border-box;
+  padding: 0px 25px;
+  width: 100%;
+  margin: 16px 0;
+  min-width: 360px;
+}
+
+.current-plan-features ul li {
+  padding: 12.5px 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+}
+.current-plan-features ul li:last-child {
+  border-bottom: 0px;
+}
+ul li .features-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1 1 0%;
+  justify-content: space-between;
+}
+
+.features-layout div:first-child {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.53846;
+  color: rgb(118, 118, 118);
+  flex: 0 0 40%;
+}
+
+.features-layout div:last-child {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+  flex: 0 0 calc(60% - 13px);
+  padding-left: 13px;
+  text-align: right;
+}
+.planForm {
+  display: none;
+}
+@keyframes grow {
+  100% {
+    max-width: 16px;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .plan-form,
+  .current-plan-features {
+    display: none;
+  }
+  .planForm {
+    margin-top: 25px;
+    margin-bottom: 16px;
+    display: flex;
+  }
+  .planForm > div {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    margin-right: 12px;
+  }
+  .planForm > div:last-child {
+    margin-right: 0px;
+  }
+  .planForm-banner {
+    flex: 1 1 auto;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 18px;
+    position: relative;
+    margin: 0px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    transition: margin 250ms ease-in-out 0s, box-shadow 250ms ease-in-out 0s,
+      border-color 250ms ease-in-out 0s;
+  }
+  .planForm-banner h2 {
+    font-size: 1.125rem;
+    color: #fff;
+  }
+  .planForm-banner sub {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1;
+    color: white;
+  }
+  .planForm-banner .subs-plan-card {
+    height: fit-content;
+  }
+  .planForm-banner .subs-plan-card .cards {
+    border: 0;
+    margin: 8px;
+    min-height: 90px;
+    padding: 10px 16px;
+  }
+  .planForm .current-plan-features {
+    display: block;
+    margin: 0;
+  }
+  .planForm .current-plan-features ul {
+    min-width: auto;
+    box-sizing: border-box;
+    padding: 0px 25px;
+    width: 100%;
+  }
+  .planForm-banner .current-plan-features .features-layout {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    flex: 1 1 0%;
+  }
+  .planForm-banner .features-layout div:last-child {
+    padding-left: 0;
+    text-align: left;
+  }
+}
