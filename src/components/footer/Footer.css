@@ -25,6 +25,11 @@
 
 .emailBox > input {
   flex: 4;
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -108,13 +113,17 @@
   .membership-container {
     padding-bottom: 2.75rem;
   }
-  .emailBox{
+  .emailBox {
     flex-direction: row;
   }
-  .emailBox button.get-started{
+  .emailBox > input {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  .emailBox button.get-started {
     padding: 0.9rem;
     min-width: 165px;
-      }
+  }
   .footer {
     padding: 0px 2.5rem 6rem 2.5rem;
   }
@@ -131,8 +140,8 @@
   .membership-container {
     padding-bottom: 3rem;
   }
-  
-  .membership-container > h3{
+
+  .membership-container > h3 {
     font-size: 1rem;
   }
   .footer {
